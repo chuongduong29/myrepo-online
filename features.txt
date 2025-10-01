@@ -1,5 +1,8 @@
+New path 01
 feature A
+New path 02
 Next row
+New path 03
 Line 01
 Line 02
 Line 03
