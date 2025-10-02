@@ -1,0 +1,4 @@
+[submodule "libs/lib"]
+	path = libs/lib
+	url = https://github.com/chuongduong29/git-practice.git
+	branch = main
