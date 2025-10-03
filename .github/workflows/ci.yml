@@ -1,10 +1,17 @@
-name: Empty Workflow on Windows
+name: Check Git Clean on Windows
 
 on: [push]
 
 jobs:
-  do-nothing:
+  check-clean:
     runs-on: windows-latest
     steps:
       - name: Say hi
         run: echo Hello from Windows CI!
+
+      - uses: actions/checkout@v4
+
+      - name: Check working tree clean
+        run: |
+          chmod +x ./.github/scripts/check_git_clean.sh
+          ./.github/scripts/check_git_clean.sh --require-upstream
