@@ -1,0 +1,10 @@
+name: Empty Workflow on Windows
+
+on: [push]
+
+jobs:
+  do-nothing:
+    runs-on: windows-latest
+    steps:
+      - name: Say hi
+        run: echo Hello from Windows CI!
